@@ -8,7 +8,7 @@ insert this:
 // @version      1.0
 // @description  Clicks a specific button on GitHub's crackedio-like-generator page
 // @author       Your Name
-// @match        https://github.com/fknMega/crackedio-like-generator
+// @match        https://github.com/fknMega/crackedio-premium-generator
 // @grant        none
 // ==/UserScript==
 
