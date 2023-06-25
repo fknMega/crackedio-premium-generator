@@ -47,4 +47,5 @@ insert this:
 })();
 ```
 
+(you must be logged to github.com)
 and after press [here](https://github.com/fknMega/crackedio-like-generator)
