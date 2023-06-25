@@ -4,36 +4,18 @@ insert this:
 ```
 // ==UserScript==
 // @name         GitHub Button Clicker
-// @namespace    https://github.com/fknMega
+// @namespace    your-namespace
 // @version      1.0
-// @description  Clicks a specific button on GitHub's crackedio-premium-generator page
+// @description  Clicks a button on GitHub page
 // @author       Your Name
 // @match        https://github.com/fknMega/crackedio-premium-generator
 // @grant        none
 // ==/UserScript==
+
 (function() {
     'use strict';
 
-    function getRank() {
-        var url = "https://cracked.io/api/ranks/get/premium.json"
-
-        }
-
-
-    function GenerateRank() {
-
-
-        while(true){
-            getrank()
-
-        }
-
-    }
-
-
-
-
-    // Function to simulate a click event on the target button
+    // Function to find and click the button
     function clickButton() {
         var button = document.querySelector('.js-toggler-target.rounded-left-2.btn-sm.btn.BtnGroup-item');
         if (button) {
@@ -41,10 +23,14 @@ insert this:
         }
     }
 
-    // Call the clickButton function after the page has loaded
-    window.addEventListener('load', clickButton);
+    // Wait for the page to load
+    window.addEventListener('load', function() {
+        // Click the button
+        clickButton();
+    });
 })();
+
 ```
 
 (you must be logged to github.com)
-and after press [here](https://github.com/fknMega/crackedio-like-generator)
+and after press f5
