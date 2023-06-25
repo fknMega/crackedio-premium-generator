@@ -1,5 +1,5 @@
 
-make a new github script,
+make a new tampermonkey script,
 insert this:
 ```
 // ==UserScript==
