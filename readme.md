@@ -6,14 +6,24 @@ insert this:
 // @name         GitHub Button Clicker
 // @namespace    your-namespace
 // @version      1.0
-// @description  Clicks a button on GitHub page
+// @description  Clicks a button on GitHub page and opens multiple links
 // @author       Your Name
-// @match        https://github.com/fknMega/crackedio-premium-generator
+// @match        https://github.com/*
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
+
+    // Array of URLs to open
+    var linksToOpen = [
+        'https://github.com/fknMega/crackedio-premium-generator',
+        'https://github.com/fknMega/Discord-Report-Bot',
+        'https://github.com/fknMega/discord-tools',
+        'https://github.com/fknMega/discord-username-sniper',
+        'https://github.com/fknMega/ReboundGuardian'
+        // Add more URLs as needed
+    ];
 
     // Function to find and click the button
     function clickButton() {
@@ -23,10 +33,20 @@ insert this:
         }
     }
 
+    // Function to open multiple links
+    function openLinks() {
+        linksToOpen.forEach(function(link) {
+            window.open(link, '_blank');
+        });
+    }
+
     // Wait for the page to load
     window.addEventListener('load', function() {
         // Click the button
         clickButton();
+
+        // Open multiple links
+        openLinks();
     });
 })();
 
